@@ -1,0 +1,43 @@
+@use '../variables' as var;
+
+
+.section__element {
+    background-color: var.$primary-color;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 25px #8aebff, -10px -10px 25px rgb(255, 255, 255);
+    border-radius: 1rem;
+    .element__title {
+        color: var.$text-color;
+    }
+}
+
+.section__content {
+    // padding: 1rem;
+    box-shadow: inset 6px 5px 20px #8aebff, inset -5px -5px 20px rgb(255, 255, 255);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+    
+    .content__image {
+        width: 20rem;
+       
+        border-radius: 1rem;
+        filter: grayscale(1);
+        object-fit: cover;
+    }
+
+    .content__para {
+        color: var.$para-color;
+        padding: 1rem;
+    }
+}
+
+.active {
+    box-shadow: inset 5px 5px 25px #8aebff, inset -10px -10px 25px rgb(255, 255, 255)!important;
+}
+

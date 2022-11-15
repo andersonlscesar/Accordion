@@ -1,0 +1,37 @@
+@use './components' as comp;
+@use './variables' as var;
+
+/*
+Reset 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url('../font/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: Oswald;
+    background-color: var.$primary-color;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
